@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+int main() {
+  int n,k,c=0,i,d;
+  std::cout<<"Enter n:";
+  std::cin>>n;
+  std::cout<<"Enter k:";
+  std::cin>>k;
+  for(i=n;i!=0;i=i/10)
+    {
+      c++;
+    }
+  for(i=k;i>=1;i--)
+    {
+      if(n!=0){
+        d=n/int(pow(10,c-1));
+        n=n % int(pow(10,c-1));}
+    c--;
+    }
+  std::cout<<d;
+  return 0;
+}
