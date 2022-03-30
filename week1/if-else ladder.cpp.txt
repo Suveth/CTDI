@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+  int n;
+  std::cin>>n;
+  if(n%2==0){
+  std::cout << "Two\n";
+    }
+  else if(n%3==0){
+    std::cout << "Three\n";
+  }
+  else if(n%11==0){
+    std::cout << "Eleven\n";
+  }
+  else{
+    std::cout << "-1\n";
+  }
+}
