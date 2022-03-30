@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main() {
+  int n,N,sum=0;
+  std::cout<<"Enter a number: ";
+  std::cin>>n;
+  for(N=n;N!=0;N=N/10)
+    {
+      sum=sum+(N%10);
+    }
+  std::cout<<sum;
+  return 0;
+}
