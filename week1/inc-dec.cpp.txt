@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int postdec(int a){
+  for(;a>0;a--);
+  return a;
+}
+
+int predec(int a){
+  for(;a>0;--a);
+  return a;
+}
+
+int Inc(int a,int b){
+  if(b<a){
+    for(;b<a;b++);
+    return b;}
+  else{
+    for(;b>=a;b--);
+    return b;}
+}
+
+int Rem(int a,int b){
+  return a%b;
+}
+
+int main() {
+  int a,b;
+  cin>>a;
+  cin>>b;
+  cout<<postdec(a);
+  cout<<"\n";
+  cout<<predec(a);
+  cout<<"\n";
+  cout<<Inc(a,b);
+  cout<<"\n";
+  cout<<Rem(a,b);
+  cout<<"\n";
+  }
