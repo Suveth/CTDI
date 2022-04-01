@@ -1,0 +1,41 @@
+// { Driver Code Starts
+//Initial Template for C++
+
+#include <bits/stdc++.h>
+using namespace std;
+
+ // } Driver Code Ends
+//User function Template for C++
+
+class Solution{
+public:
+    int primeSum(int N){
+        int i,sum=0,r,j;
+        for(i=N;i!=0;i=i/10){
+            r=i%10;
+            for(j=2;j<=r/2;j++){
+                if(r%j==0){
+                    break;
+                }
+            }
+        if(j>(r/2))
+            sum=sum+r;
+        }
+        return sum;
+    }
+};
+
+// { Driver Code Starts.
+
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int N;
+        cin>>N;
+        
+        Solution ob;
+        cout<<ob.primeSum(N)<<"\n";
+    }
+    return 0;
+}  // } Driver Code Ends
