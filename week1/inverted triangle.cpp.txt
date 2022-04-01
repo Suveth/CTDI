@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+ int r,c,s,N,col;
+ cin>>N;
+  col=(N*2)-1;
+  for(r=0;r<N;r++)
+    {
+      for(s=r;s>0;s--){
+        cout<<" ";
+      }
+      for(c=0;c<col;c++){
+         cout<<"*";
+       }
+    col-=2;
+    cout<<"\n";
+    }
+}
