@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i,j,a,b,p;
+  cin>>a;
+  cin>>b;
+  for(i=1;;i++){
+    p=a+b+i;
+    for(j=2;j<=p/2;j++){
+      if(p%j==0)
+        break;
+    }
+    if(j>p/2){
+      cout<<i;
+      break;
+    }
+  }
+}

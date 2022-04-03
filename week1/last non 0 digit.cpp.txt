@@ -1,0 +1,14 @@
+int lastNon0Digit(int n)
+{
+    int fac=1,i;
+    for(i=n;i>0;i--)
+    {
+        fac=fac*i;
+    }
+    for(i=fac;i!=0;i=i/10){
+        if((i%10)!=0){
+            cout<<i%10;
+            break;
+        }
+    }
+}

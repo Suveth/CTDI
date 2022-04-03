@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int i,N;
+  cin>>N;
+  for(i=2;i<=N/2;i++){
+    if(N%i==0)
+      break;
+  }
+  if(i<=N/2 || N==1)
+    cout<<"NO";
+  else
+    cout<<"YES";
+}
